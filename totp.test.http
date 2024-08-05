@@ -1,0 +1,8 @@
+# Generate QR Code
+GET http://localhost:8080/qr?accountName={{your-email}}
+Accept: image/png
+
+###
+
+# Validate TOTP Code
+GET http://localhost:8080/v/{{code}}
