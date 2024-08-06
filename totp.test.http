@@ -5,4 +5,4 @@ Accept: image/png
 ###
 
 # Validate TOTP Code
-GET http://localhost:8080/v/{{code}}
+GET http://localhost:8080/validate/{{code}}

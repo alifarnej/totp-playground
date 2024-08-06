@@ -68,7 +68,7 @@ func main() {
 	r.Use(middleware.Logger)
 
 	r.Get("/qr", generateQRCode)
-	r.Get("/v/{code}", validateTOTP)
+	r.Get("/validate/{code}", validateTOTP)
 
 	fmt.Println("starting server at http://localhost:8080")
 	if err := http.ListenAndServe(":8080", r); err != nil {
